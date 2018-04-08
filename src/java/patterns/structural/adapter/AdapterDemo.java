@@ -7,7 +7,6 @@ public class AdapterDemo {
         EmployeeClient client = new EmployeeClient();
 
         List<Employee> employees = client.getEmployeeList();
-
         System.out.println(employees);
     }
 }

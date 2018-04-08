@@ -3,14 +3,13 @@ package patterns.creational.builder;
 import java.util.HashMap;
 
 public class LunchOrderBean {
-
     private String bread;
     private String condiments;
     private String dressing;
     private String meat;
     public HashMap[] a = new HashMap[10];
-    public LunchOrderBean() {
 
+    public LunchOrderBean() {
     }
 
     public String getBread() {

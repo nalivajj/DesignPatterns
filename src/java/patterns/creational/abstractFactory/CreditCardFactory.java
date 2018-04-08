@@ -1,11 +1,10 @@
 package patterns.creational.abstractFactory;
 
 public abstract class CreditCardFactory {
-    public static CreditCardFactory getCreditCardFactory(int creditScore){
-        if (creditScore > 650){
+    public static CreditCardFactory getCreditCardFactory(int creditScore) {
+        if (creditScore > 650) {
             return new AmexFactory();
-        }
-        else {
+        } else {
             return new VisaFactory();
         }
     }

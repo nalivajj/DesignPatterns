@@ -1,8 +1,7 @@
 package patterns.creational.abstractFactory;
 
 public class AmexFactory extends CreditCardFactory {
-
-    public CreditCard getCreditCard(CardType cardType){
+    public CreditCard getCreditCard(CardType cardType) {
         switch (cardType) {
             case GOLD:
                 return new AmexGoldCreditCard();
@@ -13,7 +12,7 @@ public class AmexFactory extends CreditCardFactory {
         }
         return null;
     }
-    public Validator getValidator(CardType cardType){
+    public Validator getValidator(CardType cardType) {
         switch (cardType) {
             case GOLD:
                 return new AmexGoldValidator();

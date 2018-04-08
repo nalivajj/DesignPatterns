@@ -1,11 +1,10 @@
 package patterns.creational.singleton;
 
 public class DbSingleton {
-
     private static volatile DbSingleton instance;
 
-    private DbSingleton(){
-        if(instance != null){
+    private DbSingleton() {
+        if(instance != null) {
             throw new RuntimeException("Use getInstance() method to create");
         }
     }
